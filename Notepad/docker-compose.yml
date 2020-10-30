@@ -1,0 +1,14 @@
+version: "2.4"
+services:
+  notepad:
+    build: .
+    container_name: notepad
+    restart: always
+    ports:
+     - "17080:80"
+    volumes:
+     - /home/jacob/Docker/Notepad:/var/www/html/_tmp
+networks:
+  default:
+    external:
+      name: docker-network

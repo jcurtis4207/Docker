@@ -1,0 +1,27 @@
+PORTS
+53 - pihole
+67 - pihole
+8000 - portainer
+8080 - watchtower
+8086 - influxdb
+8088 - influxdb
+9000 - portainer
+10022 - gitea
+10080 - cyberchef
+12080 - dokuwiki
+12443 - dokuwiki
+13000 - gitea
+13100 - grafana
+14080 - pihole
+14443 - pihole
+15080 - homer
+16080 - ebooks apache
+17080 - notepad
+18080 - guacamole
+18384 - syncthing
+18443 - vscode
+19080 - draw.io
+19443 - draw.io
+20080 - kanboard
+21027 - syncthing
+22000 - sycnthing

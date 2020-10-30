@@ -1,0 +1,14 @@
+version: "3"
+services:
+  guacamole:
+    container_name: guacamole
+    image: oznu/guacamole:latest
+    ports:
+      - 18080:8080/tcp
+    restart: always
+    volumes:
+      - /home/jacob/Docker/Guacamole:/config
+networks:
+  default:
+    external:
+      name: docker-network

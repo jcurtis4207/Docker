@@ -1,0 +1,19 @@
+version: "3"
+services:
+  dokuwiki:
+    container_name: dokuwiki
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+    image: linuxserver/dokuwiki:latest
+    ports:
+      - 12443:443/tcp
+      - 12080:80/tcp
+    restart: always
+    volumes:
+      - /home/jacob/Docker/Dokuwiki:/config
+networks:
+  default:
+    external:
+      name: docker-network

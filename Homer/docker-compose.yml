@@ -1,0 +1,17 @@
+version: "3"
+services:
+  homer:
+    container_name: homer
+    environment:
+      - GID=1000
+      - UID=1000
+    image: b4bz/homer:latest
+    ports:
+      - 15080:8080/tcp
+    restart: always
+    volumes:
+      - /home/jacob/Docker/Homer/assets:/www/assets
+networks:
+  default:
+    external:
+      name: docker-network

@@ -1,0 +1,21 @@
+version: "3"
+services:
+  pihole:
+    container_name: pihole
+    environment:
+      - TZ=America/New_York
+    image: pihole/pihole
+    ports:
+      - 14443:443/tcp
+      - 53:53/tcp
+      - 53:53/udp
+      - 67:67/udp
+      - 14080:80/tcp
+    restart: always
+    volumes:
+      - /home/jacob/Docker/Pihole:/etc/pihole
+      - /home/jacob/Docker/Pihole-dnsmasq:/etc/dnsmasq.d
+networks:
+  default:
+    external:
+      name: docker-network

@@ -1,0 +1,16 @@
+version: "3"
+services:
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:latest
+    ports:
+      - 13100:3000/tcp
+    restart: always
+    volumes:
+      - /home/jacob/Docker/Grafana:/var/lib/grafana
+networks:
+  default:
+    external:
+      name: docker-network
+
+# chown 472:472 /home/jacob/Docker/Grafana

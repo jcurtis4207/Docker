@@ -1,0 +1,11 @@
+version: "3"
+services:
+  kanboard:
+    container_name: kanboard
+    image: kanboard/kanboard
+    ports:
+      - 20080:80/tcp
+    restart: always
+    volumes:
+      - /home/jacob/Docker/Kanboard/data:/var/www/app/data
+      - /home/jacob/Docker/Kanboard/plugins:/var/www/app/plugins
