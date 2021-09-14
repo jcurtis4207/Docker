@@ -1,0 +1,15 @@
+version: "3"
+services:
+  psitransfer:
+    container_name: psitransfer
+    image: psitrax/psitransfer:latest
+    environment:
+      - PSITRANSFER_ADMIN_PASS=admin
+      - PSITRANSFER_DEFAULT_RETENTION=21600
+    ports:
+      - 13000:3000
+    restart: always
+networks:
+  default:
+    external:
+      name: docker-network

@@ -17,7 +17,7 @@ PORTS
 15080 - homer
 16080 - ebooks apache
 17080 - notepad
-18080 - guacamole
+18085 - guacamole
 18384 - syncthing
 18443 - vscode
 19080 - draw.io

@@ -4,7 +4,7 @@ services:
     container_name: cyberchef
     image: suika/cyberchef
     ports:
-      - 10080:80/tcp
+      - 10085:80/tcp
     restart: always
 networks:
   default:
