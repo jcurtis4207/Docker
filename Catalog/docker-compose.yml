@@ -1,0 +1,16 @@
+version: "3"
+services:
+  catalog:
+    build: .
+    image: jcurtis4207/catalog
+    ports: 
+     - 11080:80
+    ### chown www-data:www-data /home/jacob/Docker/Catalog
+    volumes:
+      - /home/jacob/Docker/Catalog:/var/www/html/DB
+    container_name: catalog
+    restart: always
+networks:
+  default:
+    external:
+      name: docker-network

@@ -8,6 +8,7 @@ PORTS
 9000 - portainer
 10022 - gitea
 10080 - cyberchef
+11080 - catalog
 12080 - dokuwiki
 12443 - dokuwiki
 13000 - gitea
